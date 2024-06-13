@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<numeric__stem-width &le; 0.082<br/>gini = 0.494<br/>samples = 48855<br/>value = [21745, 27110]<br/>class = poisonous>, fillcolor="#d8ecfa"] ;
+1 [label=<categorical__gill-spacing_d &le; 0.5<br/>gini = 0.428<br/>samples = 21418<br/>value = [6638.0, 14780.0]<br/>class = poisonous>, fillcolor="#92c9f1"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.369<br/>samples = 18042<br/>value = [4395, 13647]<br/>class = poisonous>, fillcolor="#79bded"] ;
+1 -> 2 ;
+3 [label=<numeric__stem-height &le; 0.11<br/>gini = 0.446<br/>samples = 3376<br/>value = [2243, 1133]<br/>class = edible>, fillcolor="#f2c19d"] ;
+1 -> 3 ;
+4 [label=<gini = 0.311<br/>samples = 931<br/>value = [179, 752]<br/>class = poisonous>, fillcolor="#68b4eb"] ;
+3 -> 4 ;
+5 [label=<gini = 0.263<br/>samples = 2445<br/>value = [2064, 381]<br/>class = edible>, fillcolor="#ea985e"] ;
+3 -> 5 ;
+6 [label=<categorical__stem-surface_g &le; 0.5<br/>gini = 0.495<br/>samples = 27437<br/>value = [15107.0, 12330.0]<br/>class = edible>, fillcolor="#fae8db"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label=<categorical__stem-root_b &le; 0.5<br/>gini = 0.49<br/>samples = 26533<br/>value = [15107, 11426]<br/>class = edible>, fillcolor="#f9e0cf"] ;
+6 -> 7 ;
+8 [label=<numeric__cap-diameter &le; 0.18<br/>gini = 0.428<br/>samples = 3660<br/>value = [1136, 2524]<br/>class = poisonous>, fillcolor="#92c9f1"] ;
+7 -> 8 ;
+9 [label=<gini = 0.125<br/>samples = 2044<br/>value = [137, 1907]<br/>class = poisonous>, fillcolor="#47a4e7"] ;
+8 -> 9 ;
+10 [label=<gini = 0.472<br/>samples = 1616<br/>value = [999.0, 617.0]<br/>class = edible>, fillcolor="#f5cfb3"] ;
+8 -> 10 ;
+11 [label=<categorical__ring-type_z &le; 0.5<br/>gini = 0.475<br/>samples = 22873<br/>value = [13971.0, 8902.0]<br/>class = edible>, fillcolor="#f6d1b7"] ;
+7 -> 11 ;
+12 [label=<categorical__gill-attachment_d &le; 0.5<br/>gini = 0.465<br/>samples = 22088<br/>value = [13971, 8117]<br/>class = edible>, fillcolor="#f4caac"] ;
+11 -> 12 ;
+13 [label=<gini = 0.425<br/>samples = 17857<br/>value = [12377, 5480]<br/>class = edible>, fillcolor="#f1b991"] ;
+12 -> 13 ;
+14 [label=<gini = 0.47<br/>samples = 4231<br/>value = [1594, 2637]<br/>class = poisonous>, fillcolor="#b1d8f5"] ;
+12 -> 14 ;
+15 [label=<gini = 0.0<br/>samples = 785<br/>value = [0, 785]<br/>class = poisonous>, fillcolor="#399de5"] ;
+11 -> 15 ;
+16 [label=<gini = 0.0<br/>samples = 904<br/>value = [0, 904]<br/>class = poisonous>, fillcolor="#399de5"] ;
+6 -> 16 ;
+}

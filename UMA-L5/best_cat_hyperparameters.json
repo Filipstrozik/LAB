@@ -1,0 +1,1 @@
+{"learning_rate": 0.026604871347659466, "n_estimators": 1000, "objective": "CrossEntropy", "colsample_bylevel": 0.08823808134018762, "depth": 11, "boosting_type": "Ordered", "bootstrap_type": "MVS"}
